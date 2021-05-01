@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="jumbotron text-center">
+    <h1>Health Monitoring System</h1>
+    <p class="lead">Wear a Mask and Stay Safe</p>
+    {% if session.logged_in == NULL %}
+      <a href="/register" class="btn btn-primary btn-lg">Register</a>
+      <a href="/login" class="btn btn-success btn-lg">Login</a>
+    {% endif %}
+  </div>
+  <div class="form-group">
+        <legend class="border-bottom mb-4">COVID STATUS</legend>
+    <div> 
+    <a class="form-group" href="{{ url_for('covid_status') }}"><button>Covid_Data</button></a>
+    </div>
+{% endblock %}

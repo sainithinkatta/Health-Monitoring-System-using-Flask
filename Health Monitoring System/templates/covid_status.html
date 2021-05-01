@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>RESULTS</h1>
+  <table class="table table-striped">
+    <tr>
+      <th>fullname</th>
+      <th>Aadhar_no</th>
+      <th>age</th>
+      <th>gender</th>
+      <th>blood_group</th>
+      <th>covid_result</th>
+      <th>phone_number</th>
+      <th>locality</th>
+      <th></th>
+      <th></th>
+    </tr>
+    {% for user in userDetails %}
+      <tr>
+        <td>{{user.fullname}}</td>
+        <td>{{user.Aadhar_no}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.gender}}</td>
+        <td>{{user.blood_group}}</td>
+        <td>{{user.covid_result}}</td>
+        <td>{{user.phone_number}}</td>
+        <td>{{user.locality}}</td>
+        
+      </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
