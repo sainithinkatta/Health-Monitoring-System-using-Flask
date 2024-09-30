@@ -1,7 +1,8 @@
+Health Monitoring System
+
+Welcome to the Health Monitoring System, a web application built with Flask that enables the management of patient health data through a user-friendly interface. This system supports CRUD (Create, Read, Update, Delete) operations for efficient health data management.
+
 # FlaskApp
-
-Simple application with authentication and CRUD functionality using the Python Flask micro-framework
-
 ## Installation
 
 To use this template, your computer needs:
